@@ -7,6 +7,11 @@
     <title>Primera PWA</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="manifest" href="manifest.json" />
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+      }
+    </script>
   </head>
   <body>
     <h1>Nuestra primer PWA</h1>
